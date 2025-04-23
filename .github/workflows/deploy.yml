@@ -25,7 +25,7 @@ jobs:
 
     - name: Upload to Hugging Face Space
       env:
-        HF_TOKEN: ${{ secrets.HF }}
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: |
         huggingface-cli upload epanet-simulation-api . \
           --repo-type=space --token $HF_TOKEN \
