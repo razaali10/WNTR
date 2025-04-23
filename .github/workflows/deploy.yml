@@ -27,6 +27,6 @@ jobs:
       env:
         HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: |
-        huggingface-cli upload epanet-simulation-api . \
+        huggingface-cli upload razaali10/WNTR_V-api \
           --repo-type=space --token $HF_TOKEN \
           --exclude '.git/*'
